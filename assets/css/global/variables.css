@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* variáveis */
+
+:root {
+    --color-bg: #F2E8D8;
+    --color-surface: #FFF8ED;
+    --color-primary: #4A2E1F;
+    --color-secondary: #9C6B3E;
+    --color-accent: #446B5C;
+    --color-gold: #C9A35B;
+    --color-dark: #17120F;
+}
