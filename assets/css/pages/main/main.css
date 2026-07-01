@@ -1,3 +1,139 @@
 @charset "UTF-8";
 
 /* página principal */
+
+.home-hero,
+.home-section,
+.home-call {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-hero {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 0 3rem;
+}
+
+.home-hero h1 {
+    max-width: 720px;
+    color: var(--color-primary);
+    font-size: clamp(2.1rem, 6vw, 4.2rem);
+    line-height: 1.05;
+}
+
+.home-hero p,
+.home-section p,
+.home-call p {
+    color: var(--color-dark);
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.7rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0.75rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 800;
+}
+
+.btn-primary {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: var(--color-surface);
+    color: var(--color-primary);
+    border: 1px solid rgba(74, 46, 31, 0.16);
+}
+
+.home-hero-card,
+.category-card,
+.home-call {
+    background: var(--color-surface);
+    border: 1px solid rgba(74, 46, 31, 0.12);
+    border-radius: 24px;
+    box-shadow: 0 14px 30px rgba(74, 46, 31, 0.08);
+}
+
+.home-hero-card {
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-hero-card i,
+.category-card i {
+    color: var(--color-gold);
+    font-size: 3rem;
+}
+
+.home-hero-card h2,
+.home-section h2,
+.home-call h2,
+.category-card h3 {
+    color: var(--color-primary);
+}
+
+.home-section {
+    padding: 1rem 0 3rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 1.3rem;
+}
+
+.category-card {
+    padding: 1.5rem;
+}
+
+.home-call {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+
+    .home-hero,
+    .category-grid,
+    .home-call {
+        grid-template-columns: 1fr;
+    }
+
+    .home-hero,
+    .home-call {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

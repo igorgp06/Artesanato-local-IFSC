@@ -2,3 +2,14 @@
 
 /* estilo do footer */
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.1rem;
+    padding: 1rem;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    text-align: center;
+}
