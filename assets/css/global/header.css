@@ -10,7 +10,12 @@
     background: rgba(255, 248, 237, 0.96);
     border-bottom: 1px solid rgba(74, 46, 31, 0.12);
     box-shadow: 0 8px 24px rgba(74, 46, 31, 0.06);
-    backdrop-filter: blur(8px);
+
+    /*
+        Evita bug no position fixed dos filhos.
+        backdrop-filter pode fazer o menu mobile abrir preso no header.
+    */
+    /* backdrop-filter: blur(8px); */
 }
 
 .navbar {
@@ -52,6 +57,9 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .nav-link {
@@ -64,6 +72,7 @@
     color: var(--color-primary);
     font-size: 1rem;
     font-weight: 700;
+    text-decoration: none;
     transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
@@ -105,8 +114,10 @@
     display: none;
 }
 
+/* O JS vai complementar com position fixed e top negativo */
 body.menu-open {
     overflow: hidden;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -118,28 +129,45 @@ body.menu-open {
     .menu-toggle {
         display: inline-flex;
         position: relative;
-        z-index: 1002;
+        z-index: 1003;
     }
 
     .navbar-links {
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 1001;
-        width: min(82vw, 340px);
+        z-index: 1002;
+
+        width: min(360px, 86vw);
         height: 100vh;
-        padding: 6rem 1.25rem 2rem;
+        height: 100dvh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        padding: 5rem 1.25rem 2rem;
         background: var(--color-surface);
         border-left: 1px solid rgba(74, 46, 31, 0.12);
-        box-shadow: -18px 0 42px rgba(23, 18, 15, 0.18);
+        box-shadow: -12px 0 32px rgba(23, 18, 15, 0.22);
+
         transform: translateX(105%);
+        opacity: 0;
         visibility: hidden;
-        transition: transform 0.3s ease, visibility 0.3s ease;
+        pointer-events: none;
+
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease,
+            visibility 0.3s ease;
     }
 
     .navbar-links.active {
         transform: translateX(0);
+        opacity: 1;
         visibility: visible;
+        pointer-events: auto;
     }
 
     .links {
@@ -152,20 +180,21 @@ body.menu-open {
     .nav-link {
         width: 100%;
         justify-content: flex-start;
-        padding: 0.85rem 1rem;
+        padding: 0.9rem 1rem;
         background: rgba(242, 232, 216, 0.72);
         font-size: 1.05rem;
     }
 
     .nav-link.active {
         background: var(--color-accent);
+        color: #fff;
     }
 
     .menu-overlay {
         display: block;
         position: fixed;
         inset: 0;
-        z-index: 1000;
+        z-index: 1001;
         border: 0;
         background: rgba(23, 18, 15, 0.45);
         opacity: 0;

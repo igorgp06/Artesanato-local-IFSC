@@ -63,12 +63,26 @@
 .btn-primary {
     background: var(--color-accent);
     color: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background: var(--color-surface);
+    color: var(--color-accent);
 }
 
 .btn-secondary {
     background: var(--color-surface);
     color: var(--color-primary);
     border: 1px solid rgba(74, 46, 31, 0.16);
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+    background: var(--color-dark);
+    color: #fff;
 }
 
 .home-hero-card,
@@ -78,11 +92,19 @@
     border: 1px solid rgba(74, 46, 31, 0.12);
     border-radius: 24px;
     box-shadow: 0 14px 30px rgba(74, 46, 31, 0.08);
+    transition: all 0.3s ease-in-out;
 }
 
 .home-hero-card {
     padding: 2rem;
     text-align: center;
+}
+
+.home-hero-card:hover,
+.category-card:hover,
+.home-call:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 36px rgba(74, 46, 31, 0.12);
 }
 
 .home-hero-card i,

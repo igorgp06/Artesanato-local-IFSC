@@ -1,6 +1,6 @@
 # Web site de Artesanato Local (IFSC)
 
-Um web site para divulgar o artesanato locaL de uma loja ficticia, com informações sobre os produtos, galeria de fotos, pedidos via Whatsapp, etc. Feito para o curso de Programação para Internet - SI25 do IFSC (Sistemas para Internet 1).
+Um web site para divulgar o artesanato local (nome fictício: Casa Flor de Barro) de uma loja ficticia, com informações sobre os produtos, galeria de fotos, pedidos via Whatsapp, etc. Feito para o curso de Programação para Internet - SI25 do IFSC (Sistemas para Internet 1).
 
 ## Controle Versional (GIT)
 
