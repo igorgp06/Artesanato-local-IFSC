@@ -1,8 +1,5 @@
 ### palheta de cores
 
-a decidir entre palhetas de `verão`, `luxo`, `praia`, `natureza` ou manter a `neutralidade` com tons de cinza, branco e preto.
-
-primeira ideia de palheta de cores:
 ~~~css
 :root {
   --color-bg: #F2E8D8;     
@@ -37,26 +34,15 @@ primeira ideia de palheta de cores:
       - (Imagem, nome do produto, categoria, descrição curta, preço, botão de WhatsApp)
     - footer -> com links rapidos, contato, pequeno texto + copyright e desenvolvedores responsaveis 
 
-
 #### página 3:
 
-- sobre a loja
-    - header -> menu de navegação, decidir se uma uma página só ou mais
-    - hero -> uma apresentação inicial e um texto (pequeno) explicativo sobre a página de contato
-    - formulário de contato -> para enviar mensagens para o email da loja
-    - informações de contato -> para mostrar o telefone, email, endereço, etc.
-    - mapa -> para mostrar a localização da loja 
-    
-#### página 4:
-
-- contato
-    - header -> menu de navegação, decidir se uma uma página só ou mais
-    - hero -> uma apresentação inicial e um texto (pequeno) + call to action
-    - formulário de contato -> para enviar mensagens para o email da loja
-      - informações de contato -> para mostrar o telefone, email, endereço, etc.
-    - mapa -> para mostrar a localização da loja
-    - footer -> com links rapidos, contato, pequeno texto + copyright e desenvolvedores responsaveis 
-
+- sobre a loja e contato
+  - header -> menu de navegação, decidir se uma uma página só ou mais
+  - hero -> uma apresentação inicial e um texto (pequeno) explicativo sobre a página de contato
+  - formulário de contato -> para enviar mensagens para o email da loja
+  - informações de contato -> para mostrar o telefone, email, endereço, etc.
+  - mapa -> para mostrar a localização da loja
+  - footer -> com links rapidos, contato, pequeno texto + copyright e desenvolvedores responsaveis
 
 ### info e outros
 

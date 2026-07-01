@@ -25,5 +25,5 @@ Este projeto está licenciado sob a licença Apache License Version 2.0.
 
 ## Desenvolvedores Responsáveis
 
-Igor Gonçalves - [Site do desenvolvedor](https://igdeveloper.com.br) | [GitHub do desenvolvedor](https://github.com/igorgp06)
-Samuel da Silveria - 
+Igor Gonçalves - [Site do desenvolvedor](https://igdeveloper.com.br) | [GitHub do desenvolvedor](https://github.com/igorgp06)     
+Samuel da Silveria -    

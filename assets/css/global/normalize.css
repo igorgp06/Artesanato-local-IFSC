@@ -10,4 +10,11 @@
 
 html {
     overflow-x: hidden;
+    background: var(--color-bg);
+    color: var(--color-dark);
+}
+
+a, li, ul {
+    text-decoration: none;
+    color: inherit;
 }
