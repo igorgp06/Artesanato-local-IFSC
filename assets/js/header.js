@@ -13,11 +13,6 @@ function openMenu() {
     overlay.classList.add("active");
     document.body.classList.add("menu-open");
 
-    /*
-        Trava o body exatamente na posição atual.
-        Isso impede o usuário de scrollar por trás do menu
-        e evita a página pular para o topo.
-    */
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollPosition}px`;
     document.body.style.left = "0";
