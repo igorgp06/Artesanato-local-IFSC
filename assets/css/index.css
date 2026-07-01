@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 /* import dos estilos globais */
+
 @import url('./global/global.css');
 
 /* import estilos das paginas */
+
 @import url('./pages/main/main.css');
 @import url('./pages/gallery/gallery.css');
 @import url('./pages/contact/contact.css');
