@@ -10,12 +10,6 @@
     background: rgba(255, 248, 237, 0.96);
     border-bottom: 1px solid rgba(74, 46, 31, 0.12);
     box-shadow: 0 8px 24px rgba(74, 46, 31, 0.06);
-
-    /*
-        Evita bug no position fixed dos filhos.
-        backdrop-filter pode fazer o menu mobile abrir preso no header.
-    */
-    /* backdrop-filter: blur(8px); */
 }
 
 .navbar {
@@ -114,7 +108,6 @@
     display: none;
 }
 
-/* O JS vai complementar com position fixed e top negativo */
 body.menu-open {
     overflow: hidden;
     width: 100%;

@@ -1,3 +1,114 @@
 @charset "UTF-8";
 
 /* página da galeria */
+
+.gallery-hero,
+.gallery-products {
+    width: min(1120px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.gallery-hero {
+    padding: 3.5rem 0 2rem;
+    text-align: center;
+}
+
+.gallery-hero h1 {
+    color: var(--color-primary);
+    font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.gallery-hero p {
+    max-width: 680px;
+    margin: 0.8rem auto 0;
+    color: var(--color-dark);
+    line-height: 1.7;
+}
+
+.gallery-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+    padding-bottom: 3rem;
+}
+
+.product-card {
+    overflow: hidden;
+    background: var(--color-surface);
+    border: 1px solid rgba(74, 46, 31, 0.12);
+    border-radius: 22px;
+    box-shadow: 0 12px 28px rgba(74, 46, 31, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover,
+.product-card:focus-within {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(74, 46, 31, 0.12);
+}
+
+.product-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 190px;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.photo-ceramic { background: linear-gradient(135deg, #9c6b3e, #c9a35b); }
+.photo-basket { background: linear-gradient(135deg, #4a2e1f, #9c6b3e); }
+.photo-embroidery { background: linear-gradient(135deg, #446b5c, #c9a35b); }
+.photo-wood { background: linear-gradient(135deg, #7b4d2a, #446b5c); }
+
+.product-info {
+    padding: 1.4rem;
+}
+
+.product-info span {
+    color: var(--color-accent);
+    font-weight: 800;
+}
+
+.product-info h2 {
+    margin: 0.4rem 0;
+    color: var(--color-primary);
+}
+
+.product-info p {
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+.product-info strong {
+    display: block;
+    margin: 0.8rem 0;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+
+.gallery-btn {
+    display: inline-flex;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-btn-1 { background: linear-gradient(135deg, #c9a35b, #9c6b3e); }
+.item-btn-2 { background: linear-gradient(135deg, #9c6b3e, #4a2e1f); }
+.item-btn-3 { background: linear-gradient(135deg, #c9a35b, #446b5c); }
+.item-btn-4 { background: linear-gradient(135deg, #446b5c, #7b4d2a); }
+
+.gallery-btn:hover,
+.gallery-btn:focus-visible {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .gallery-products {
+        grid-template-columns: 1fr;
+    }
+}

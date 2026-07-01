@@ -9,8 +9,7 @@
     justify-content: center;
     gap: 0.1rem;
     padding: 1rem;
-    background: var(--color-primary);
-    color: var(--color-surface);
+    color: var(--color-dark);
     text-align: center;
     font-size: 0.8rem;
 }
