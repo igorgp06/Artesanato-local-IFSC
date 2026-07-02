@@ -56,10 +56,21 @@
     font-size: 4rem;
 }
 
-.photo-ceramic { background: linear-gradient(135deg, #9c6b3e, #c9a35b); }
-.photo-basket { background: linear-gradient(135deg, #4a2e1f, #9c6b3e); }
-.photo-embroidery { background: linear-gradient(135deg, #446b5c, #c9a35b); }
-.photo-wood { background: linear-gradient(135deg, #7b4d2a, #446b5c); }
+.photo-ceramic {
+    background: linear-gradient(135deg, #9c6b3e, #c9a35b);
+}
+
+.photo-basket {
+    background: linear-gradient(135deg, #4a2e1f, #9c6b3e);
+}
+
+.photo-embroidery {
+    background: linear-gradient(135deg, #446b5c, #c9a35b);
+}
+
+.photo-wood {
+    background: linear-gradient(135deg, #7b4d2a, #446b5c);
+}
 
 .product-info {
     padding: 1.4rem;
@@ -96,10 +107,21 @@
     transition: all 0.3s ease-in-out;
 }
 
-.item-btn-1 { background: linear-gradient(135deg, #c9a35b, #9c6b3e); }
-.item-btn-2 { background: linear-gradient(135deg, #9c6b3e, #4a2e1f); }
-.item-btn-3 { background: linear-gradient(135deg, #c9a35b, #446b5c); }
-.item-btn-4 { background: linear-gradient(135deg, #446b5c, #7b4d2a); }
+.item-btn-1 {
+    background: linear-gradient(135deg, #c9a35b, #9c6b3e);
+}
+
+.item-btn-2 {
+    background: linear-gradient(135deg, #9c6b3e, #4a2e1f);
+}
+
+.item-btn-3 {
+    background: linear-gradient(135deg, #c9a35b, #446b5c);
+}
+
+.item-btn-4 {
+    background: linear-gradient(135deg, #446b5c, #7b4d2a);
+}
 
 .gallery-btn:hover,
 .gallery-btn:focus-visible {

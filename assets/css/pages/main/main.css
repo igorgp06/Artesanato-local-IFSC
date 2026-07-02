@@ -50,7 +50,8 @@
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-tertiary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +64,7 @@
 .btn-primary {
     background: var(--color-accent);
     color: #fff;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover,
@@ -76,13 +77,24 @@
     background: var(--color-surface);
     color: var(--color-primary);
     border: 1px solid rgba(74, 46, 31, 0.16);
-    transition: all 0.25s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus-visible {
     background: var(--color-dark);
     color: #fff;
+}
+
+.btn-tertiary {
+    background: var(--color-accent);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus-visible {
+    background: var(--color-dark);
 }
 
 .home-hero-card,
