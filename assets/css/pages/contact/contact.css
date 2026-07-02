@@ -43,6 +43,15 @@
     border: 1px solid rgba(74, 46, 31, 0.12);
     border-radius: 22px;
     box-shadow: 0 12px 28px rgba(74, 46, 31, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-box:hover,
+.contact-box:hover,
+.contact-form-section:hover {
+    box-shadow: 0 12px 28px rgba(74, 46, 31, 0.12);
+    scale: 1.01;
+    transform: translateY(-2px);
 }
 
 .about-box h2,
@@ -79,6 +88,15 @@
     color: #fff;
     font-weight: 800;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-button:hover,
+.contact-form button:hover,
+.whatsapp-button:focus-visible,
+.contact-form button:focus-visible {
+    background: var(--color-dark);
+    border: 1px solid rgba(74, 46, 31, 0.16);
 }
 
 .contact-form-section {

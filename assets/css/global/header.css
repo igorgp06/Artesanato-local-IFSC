@@ -82,8 +82,8 @@
     color: #fff;
 }
 
-.menu-toggle {
-    display: none;
+.menu-toggle,
+.menu-close {
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -98,8 +98,18 @@
     transition: background 0.25s ease, color 0.25s ease;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.menu-close {
+    display: none;
+}
+
 .menu-toggle:hover,
-.menu-toggle:focus-visible {
+.menu-toggle:focus-visible,
+.menu-close:hover,
+.menu-close:focus-visible {
     background: var(--color-accent);
     color: #fff;
 }
@@ -150,10 +160,7 @@ body.menu-open {
         visibility: hidden;
         pointer-events: none;
 
-        transition:
-            transform 0.3s ease,
-            opacity 0.3s ease,
-            visibility 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
     }
 
     .navbar-links.active {
@@ -161,6 +168,14 @@ body.menu-open {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+    }
+
+    .menu-close {
+        display: inline-flex;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1004;
     }
 
     .links {

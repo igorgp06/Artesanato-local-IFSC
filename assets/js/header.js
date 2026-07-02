@@ -1,12 +1,14 @@
 const menuToggle = document.querySelector(".menu-toggle");
+const menuClose = document.querySelector(".menu-close");
 const menu = document.querySelector("#menu-principal");
 const overlay = document.querySelector(".menu-overlay");
-const menuIcon = menuToggle?.querySelector("i");
 const navLinks = document.querySelectorAll(".nav-link");
 
 let scrollPosition = 0;
 
 function openMenu() {
+    if (!menu || !overlay || !menuToggle) return;
+
     scrollPosition = window.scrollY;
 
     menu.classList.add("active");
@@ -19,15 +21,12 @@ function openMenu() {
     document.body.style.right = "0";
 
     menuToggle.setAttribute("aria-expanded", "true");
-    menuToggle.setAttribute("aria-label", "Fechar menu");
-
-    if (menuIcon) {
-        menuIcon.classList.remove("bi-list");
-        menuIcon.classList.add("bi-x-lg");
-    }
+    menuToggle.setAttribute("aria-label", "Menu aberto");
 }
 
 function closeMenu() {
+    if (!menu || !overlay || !menuToggle) return;
+
     menu.classList.remove("active");
     overlay.classList.remove("active");
     document.body.classList.remove("menu-open");
@@ -41,11 +40,6 @@ function closeMenu() {
 
     menuToggle.setAttribute("aria-expanded", "false");
     menuToggle.setAttribute("aria-label", "Abrir menu");
-
-    if (menuIcon) {
-        menuIcon.classList.remove("bi-x-lg");
-        menuIcon.classList.add("bi-list");
-    }
 }
 
 function toggleMenu() {
@@ -75,6 +69,10 @@ function setActiveLink() {
 if (menuToggle && menu && overlay) {
     menuToggle.addEventListener("click", toggleMenu);
     overlay.addEventListener("click", closeMenu);
+
+    if (menuClose) {
+        menuClose.addEventListener("click", closeMenu);
+    }
 
     navLinks.forEach((link) => {
         link.addEventListener("click", closeMenu);
